@@ -1,5 +1,5 @@
 body.bg {
-    /*background-image: url("./climateimage.png");*/
+    /*background-image: url("./climateimage.png");*/ /* Not sold on this background image, too generic and color-ey 💀*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -41,24 +41,25 @@ body.bg::before {
     text-decoration: none;
 }
 
-.main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
-.main-nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 0.95rem;
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.main-nav a:hover {
-    text-decoration: underline;
+.menu-toggle span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
 }
-
 
 .hero {
     display: flex;
@@ -127,20 +128,48 @@ body.bg::before {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header-container {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .main-nav ul {
+    .nav {
+        display: none;
         flex-direction: column;
-        gap: 1rem;
-        margin-top: 0.5rem;
+        top: 70%;
+        padding: 1.5rem;
+        position: absolute;
+        flex-direction: column;
+        border-radius: 8px;
+        right: 20px;
+        background: #111;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     body.bg {
         background-attachment: scroll;
     }
-}
 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+}
