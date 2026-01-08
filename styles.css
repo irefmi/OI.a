@@ -1,5 +1,5 @@
 body.bg {
-    background-image: url("./climateimage.png");
+    /*background-image: url("./climateimage.png");*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -58,6 +58,74 @@ body.bg::before {
 .main-nav a:hover {
     text-decoration: underline;
 }
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem;
+    min-height: 100vh;
+}
+
+.hero-content {
+    max-width: 520px;
+    color: #fff;
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    min-height: 420px;
+    background-image: url('./climateimage.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.hero-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8 rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.primary{
+    background-color: #2ecc71;
+    color: #000000;
+}
+
+.secondary{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.hero-image {
+    flex: 1;
+    min-height: 420px;
+    background-image: url('./climateimage.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+
 
 @media (max-width: 768px) {
     .header-container {
