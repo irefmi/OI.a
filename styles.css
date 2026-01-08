@@ -1,5 +1,6 @@
 body.bg {
     /*background-image: url("./climateimage.png");*/ /* Not sold on this background image, too generic and color-ey 💀*/
+    background-color: #354d3f;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
