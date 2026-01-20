@@ -38,9 +38,26 @@ body.bg::before {
 
 .logo a {
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 550;
     color: #1a1a1a;
     text-decoration: none;
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.menu-toggle span{
+    display: block;
+    width: 20px;
+    background-color: #111010;
+    margin: 5px 0;
+    padding: 0.15rem;
+    align-items: left;
 }
 
 .nav {
@@ -74,22 +91,6 @@ body.bg::before {
     z-index: 9999;
 }
 
-.menu-toggle{
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-toggle span{
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #090909;
-    margin: 5px 0;
-    padding: 0.5rem;
-    align-items: right;
-}
 
 .hero {
     display: flex;
@@ -141,13 +142,13 @@ body.bg::before {
 }
 
 .primary{
-    background-color: #2ecc71;
-    color: #000000;
+    text-decoration: solid;
+    color: aquamarine;
 }
 
 .secondary{
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    text-decoration: none;
+    color: aquamarine;
 }
 
 .hero-image {
